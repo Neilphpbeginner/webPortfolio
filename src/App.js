@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavBar from "./components/NavBar";
+import { makeStyles, Typography } from "@material-ui/core";
 
-function App() {
+const useStyles = makeStyles({
+  root: {
+    marginTop: "4.5rem",
+    textAlign: "center",
+  },
+});
+
+export default function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <section className={classes.root}>
+        <Typography variant="h3" color="secondary">
+          Hello
+        </Typography>
+      </section>
     </div>
   );
 }
-
-export default App;
