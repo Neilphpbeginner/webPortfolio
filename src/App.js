@@ -1,24 +1,20 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import { makeStyles, Typography } from "@material-ui/core";
-
-const useStyles = makeStyles({
-  root: {
-    marginTop: "4.5rem",
-    textAlign: "center",
-  },
-});
+import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import About from "./components/About";
+import ContactPage from "./components/ContactPage";
+import Projects from "./components/Projects";
+import Home from "./components/Home";
 
 export default function App() {
-  const classes = useStyles();
   return (
     <div>
-      <NavBar />
-      <section className={classes.root}>
-        <Typography variant="h3" color="secondary">
-          Hello
-        </Typography>
-      </section>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/projects" component={Projects} />
+      </Switch>
     </div>
   );
 }

@@ -17,6 +17,9 @@ const theme = createMuiTheme({
       default: "#fff",
     },
   },
+  root: {
+    marginTop: "4.5rem",
+  },
 });
 
 export default theme;

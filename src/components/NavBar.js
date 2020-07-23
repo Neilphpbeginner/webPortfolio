@@ -14,6 +14,7 @@ const useStyles = makeStyles({
   },
   mainHeading: {
     flexShrink: 1,
+    fontSize: "2.3rem",
   },
   menuItems: {
     display: "flex",
@@ -29,6 +30,7 @@ const useStyles = makeStyles({
       color: "#FFFFFF",
       margin: "0rem 1.0rem 0rem 1.0rem",
       textAlign: "center",
+      fontSize: "2.3rem",
     },
     "& a": {
       fontSize: ".5rem",
@@ -55,6 +57,11 @@ export default function NavBar() {
             <Link to="/about">
               <Typography variant="h6" color="textPrimary">
                 About
+              </Typography>
+            </Link>
+            <Link to="/projects">
+              <Typography variant="h6" color="textPrimary">
+                Projects
               </Typography>
             </Link>
             <Link to="/contact">
