@@ -1,12 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
 import { Helmet } from "react-helmet";
-import { makeStyles, Button } from "@material-ui/core";
-import theme from "../MaterialUI Theme/theme";
+import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   AboutPageMainContent: {
-    marginTop: "4.5rem",
+    marginTop: "7rem",
   },
 });
 
@@ -19,9 +18,6 @@ export default function About() {
       </Helmet>
       <NavBar />
       <section className={classes.AboutPageMainContent}>
-        <Button variant="contained" color="secondary">
-          Hello
-        </Button>
       </section>
     </div>
   );
