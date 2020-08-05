@@ -1,30 +1,51 @@
 import React from "react";
 import { useFormik } from "formik";
-import { theme } from "../MaterialUI Theme/theme";
 import * as Yup from "yup";
 import {
   FormControl,
   FormHelperText,
-  FormLabel,
-  Input,
   Button,
   Typography,
   makeStyles,
+  TextField,
 } from "@material-ui/core";
-import { red } from "@material-ui/core/colors";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   contactForm: {
     display: "flex",
     flexDirection: "column",
-    minWidth: "75%",
+    minWidth: "85%",
     minHeight: "100vh",
+    "@media (max-width: 500px)": {
+      marginTop: "11.7rem",
+    },
     "& span": {
-      fontSize: "5rem",
-      //   color: theme.pallet.,
+      fontSize: "3.4rem",
+      margin: "auto",
+    },
+    "& input": {
+      fontSize: "2.0rem",
+      marginLeft: "2.5rem",
+    },
+    "& p": {
+      margin: "1.5rem",
+      textAlign: "center",
+      color: "red",
+      fontSize: "2.0rem",
+    },
+    "& button": {
+      backgroundColor: theme.palette.primary.main,
+      "& span": {
+        color: "white",
+      },
     },
   },
-});
+  root: {
+    "& label": {
+      fontSize: "2.4rem",
+    },
+  },
+}));
 
 const ContactForm = () => {
   const classes = useStyles();
@@ -37,7 +58,7 @@ const ContactForm = () => {
     validationSchema: Yup.object({
       contactPersonEmail: Yup.string()
         .email("Invalid Email")
-        .required("Please enter in your email address"),
+        .required("Please enter in your email address."),
       contactPersonSubject: Yup.string().required(
         "Subject of your enquiery is required"
       ),
@@ -54,13 +75,12 @@ const ContactForm = () => {
       <Typography variant="alignCenter" color="initial">
         Contact me
       </Typography>
-      <FormControl>
-        <FormLabel>Email Address</FormLabel>
-        <Input
+      <FormControl className={classes.root}>
+        <TextField
+          variant="outlined"
+          label="Email Address"
           id="contactPersonEmail"
           name="contactPersonEmail"
-          placeholder="Your Email Address"
-          autoFocus={true}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.contactPersonEmail}
@@ -70,13 +90,12 @@ const ContactForm = () => {
             formik.errors.contactPersonEmail}
         </FormHelperText>
       </FormControl>
-      <FormControl>
-        <FormLabel>Subject of equiry</FormLabel>
-        <Input
+      <FormControl className={classes.root}>
+        <TextField
+          variant="outlined"
+          label="Subject of Enquery"
           id="contactPersonSubject"
           name="contactPersonSubject"
-          placeholder="Subject of Enquery"
-          autoFocus={true}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.contactPersonSubject}
@@ -86,13 +105,14 @@ const ContactForm = () => {
             formik.errors.contactPersonSubject}
         </FormHelperText>
       </FormControl>
-      <FormControl>
-        <FormLabel>Content of Enquirey</FormLabel>
-        <Input
+      <FormControl className={classes.root}>
+        <TextField
+          variant="outlined"
+          multiline="true"
+          rows="15"
+          label="Content of Enquery"
           id="constactPersonEnquiry"
           name="constactPersonEnquiry"
-          placeholder="Subject of Enquery"
-          autoFocus={true}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.constactPersonEnquiry}
@@ -102,7 +122,7 @@ const ContactForm = () => {
             formik.errors.constactPersonEnquiry}
         </FormHelperText>
       </FormControl>
-      <Button variant="text" color="default" type="submit">
+      <Button variant="text" type="submit">
         Submit
       </Button>
     </form>
