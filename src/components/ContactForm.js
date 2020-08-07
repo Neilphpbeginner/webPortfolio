@@ -11,17 +11,20 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+  contactHeading: {
+    marginTop: "11.7rem",
+    marginBottom: "1.3rem",
+  },
   contactForm: {
     display: "flex",
     flexDirection: "column",
     minWidth: "85%",
     minHeight: "100vh",
     "@media (max-width: 500px)": {
-      marginTop: "11.7rem",
+      marginTop: "1rem",
     },
     "& span": {
       fontSize: "3.4rem",
-      margin: "auto",
     },
     "& input": {
       fontSize: "2.0rem",
@@ -58,7 +61,7 @@ const ContactForm = () => {
     validationSchema: Yup.object({
       contactPersonEmail: Yup.string()
         .email("Invalid Email")
-        .required("Please enter in your email address."),
+        .required("Please enter in a valid email address."),
       contactPersonSubject: Yup.string().required(
         "Subject of your enquiery is required"
       ),
@@ -72,7 +75,11 @@ const ContactForm = () => {
   });
   return (
     <form onSubmit={formik.handleSubmit} className={classes.contactForm}>
-      <Typography variant="alignCenter" color="initial">
+      <Typography
+        variant="alignCenter"
+        color="initial"
+        className={classes.contactHeading}
+      >
         Contact me
       </Typography>
       <FormControl className={classes.root}>
