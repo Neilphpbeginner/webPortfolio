@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import { Helmet } from "react-helmet";
-import theme from ".";
+import theme from "../MaterialUI Theme/theme";
 import { Card, makeStyles, CardContent, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
