@@ -7,6 +7,7 @@ export default function Projects() {
 		<div>
 			<Helmet>
 				<title> Neil Lemmer || Projects</title>
+				<meta name="description" content="Neil Lemmer Project's Page" />
 			</Helmet>
 			<NavBar />
 		</div>

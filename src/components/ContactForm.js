@@ -39,9 +39,9 @@ const useStyles = makeStyles(theme => ({
 		},
 		"& button": {
 			backgroundColor: theme.palette.primary.main,
-			"& span": {
-				color: "white",
-			},
+			// "& span": {
+			// 	color: "white",
+			// },
 		},
 		"& textarea": {
 			fontSize: "2.0rem",
@@ -67,9 +67,9 @@ const ContactForm = () => {
 			contactPersonEmail: Yup.string()
 				.email("Invalid Email")
 				.required("Please enter in a valid email address."),
-			contactPersonSubject: Yup.string().required(
-				"Subject of your enquiery is required",
-			),
+			contactPersonSubject: Yup.string()
+				.required("Subject of your enquiry is required")
+				.min(6, "Your enquiry needs to be atleast six charaters long"),
 			contactPersonEnquiry: Yup.string().required(
 				"Information of your enquiry is required.",
 			),

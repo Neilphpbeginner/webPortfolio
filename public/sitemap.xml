@@ -4,4 +4,16 @@
       <loc>http://www.nlemmercv.co.za</loc>
       <priority>1.0</priority>
    </url>
+   <url>
+      <loc>http://www.nlemmercv.co.za/about</loc>
+      <priority>0.06</priority>
+   </url>
+   <url>
+      <loc>http://www.nlemmercv.co.za/contact</loc>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>http://www.nlemmercv.co.za/projects</loc>
+      <priority>0.60</priority>
+   </url>
 </urlset> 
