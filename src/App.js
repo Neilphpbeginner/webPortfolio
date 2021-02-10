@@ -21,7 +21,7 @@ export default function App() {
         />
       </Helmet>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" render component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/projects" component={Projects} />

@@ -6,7 +6,6 @@ import ContactForm from "./ContactForm";
 
 const useStyles = makeStyles({
   contactForm: {
-    marginTop: "7.0rem",
     display: "flex",
     justifyContent: "center",
     minHeight: "100vh",

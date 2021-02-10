@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router forceRefresh={true}>
         <App />
       </Router>
     </ThemeProvider>

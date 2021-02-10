@@ -10,6 +10,7 @@ import {
   TextField,
 } from "@material-ui/core";
 import axiosBaseUrl from "../utils/axiosBaseUrl";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   contactHeading: {
@@ -56,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ContactForm = () => {
+  let history = useHistory();
   const classes = useStyles();
   const formik = useFormik({
     initialValues: {
@@ -75,6 +77,7 @@ const ContactForm = () => {
       ),
     }),
     onSubmit: (values) => {
+      console.log(values);
       axiosBaseUrl
         .post("/sendEmail", {
           enquiryEmailAdress: values.contactPersonEmail,
@@ -82,7 +85,8 @@ const ContactForm = () => {
           enquiryEmailContent: values.contactPersonEnquiry,
         })
         .then((response) => {
-          console.log(response);
+          alert("Your enquiry has been sent to Neil Lemmer");
+          history.push("/");
         })
         .catch((error) => {
           console.log(error);
@@ -116,7 +120,7 @@ const ContactForm = () => {
       <FormControl className={classes.root}>
         <TextField
           variant="outlined"
-          label="Subject of Enquery"
+          label="Subject of Enquiry"
           id="contactPersonSubject"
           name="contactPersonSubject"
           onChange={formik.handleChange}
@@ -133,7 +137,7 @@ const ContactForm = () => {
           variant="outlined"
           multiline="true"
           rows="15"
-          label="Content of Enquery"
+          label="Content of Enquiry"
           id="contactPersonEnquiry"
           name="contactPersonEnquiry"
           onChange={formik.handleChange}
