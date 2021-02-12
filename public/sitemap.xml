@@ -1,6 +1,18 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<sitemap>
-<loc>https://neillemmerwebportfolio.herokuapp.com/sitemap.xml</loc>
-</sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://neillemmerwebportfolio.herokuapp.com/</loc>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>https://neillemmerwebportfolio.herokuapp.com/about</loc>
+      <priority>0.60</priority>
+   </url>
+   <url>
+      <loc>https://neillemmerwebportfolio.herokuapp.com/contact</loc>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>http://www.nlemmercv.co.za/projects</loc>
+      <priority>0.60</priority>
+   </url>
+</urlset> 
