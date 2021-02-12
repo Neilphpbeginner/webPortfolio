@@ -38,12 +38,6 @@ const useStyles = makeStyles((theme) => ({
       color: "red",
       fontSize: "2.0rem",
     },
-    "& button": {
-      backgroundColor: theme.palette.primary.main,
-      // "& span": {
-      // 	color: "white",
-      // },
-    },
     "& textarea": {
       fontSize: "2.0rem",
       padding: "1.5rem",
@@ -72,9 +66,12 @@ const ContactForm = () => {
       contactPersonSubject: Yup.string()
         .required("Subject of your enquiry is required")
         .min(6, "Your enquiry needs to be atleast six charaters long"),
-      contactPersonEnquiry: Yup.string().required(
-        "Information of your enquiry is required."
-      ),
+      contactPersonEnquiry: Yup.string()
+        .required("Information of your enquiry is required.")
+        .min(
+          12,
+          "The natuer of your enquire needs to be atleast 12 charaters long."
+        ),
     }),
     onSubmit: (values) => {
       console.log(values);
