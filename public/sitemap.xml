@@ -1,18 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://neillemmerwebportfolio.herokuapp.com/</loc>
-      <priority>1.0</priority>
    </url>
-   <!-- <url>
-      <loc>https://neillemmerwebportfolio.herokuapp.com/about</loc>
-      <priority>0.60</priority>
-   </url>
-   <url>
-      <loc>https://neillemmerwebportfolio.herokuapp.com/contact</loc>
-      <priority>0.80</priority>
-   </url>
-   <url>
-      <loc>http://www.nlemmercv.co.za/projects</loc>
-      <priority>0.60</priority>
-   </url> -->
 </urlset> 
