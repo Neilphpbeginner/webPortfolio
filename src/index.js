@@ -5,7 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "./MaterialUI Theme/theme";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>

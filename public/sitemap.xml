@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://neillemmerwebportfolio.herokuapp.com/</loc>
+      <loc>http://www.nlemmercv.co.za/</loc>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://neillemmerwebportfolio.herokuapp.com/about</loc>
+      <loc>http://www.nlemmercv.co.za/about</loc>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://neillemmerwebportfolio.herokuapp.com/projects</loc>
+      <loc>http://www.nlemmercv.co.za/projects</loc>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://neillemmerwebportfolio.herokuapp.com/contact</loc>
+      <loc>http://www.nlemmercv.co.za/contact</loc>
       <priority>0.8</priority>
    </url>
 </urlset> 

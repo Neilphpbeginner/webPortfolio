@@ -11,6 +11,7 @@ export default function App() {
   return (
     <div>
       <Helmet>
+        <title> Neil Lemmer || Full Stack Web Developer</title>
         <meta
           name="description"
           content="Neil Lemmer Full Stack Web developer. I am a motivated, hardworking individual that thrives on a challenge.  I perform my duties to the best of my abilities, and often clients work under pressure to achieve targets.  I am reliable and trustworthy and possess exceptional leadership qualities. "
