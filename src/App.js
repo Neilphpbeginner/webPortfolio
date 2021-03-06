@@ -22,10 +22,18 @@ export default function App() {
         />
       </Helmet>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/projects" component={Projects} />
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/contact">
+          <ContactPage />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
       </Switch>
     </div>
   );

@@ -74,7 +74,6 @@ const ContactForm = () => {
         ),
     }),
     onSubmit: (values) => {
-      console.log(values);
       axiosBaseUrl
         .post("/sendEmail", {
           enquiryEmailAdress: values.contactPersonEmail,
