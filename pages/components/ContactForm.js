@@ -9,8 +9,7 @@ import {
   makeStyles,
   TextField,
 } from "@material-ui/core";
-import axiosBaseUrl from "../src/axiosBaseUrl";
-// import { useHistory } from "react-router-dom";
+import axiosBaseUrl from "../../src/axiosBaseUrl";
 
 const useStyles = makeStyles((theme) => ({
   contactHeading: {
@@ -51,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ContactForm = () => {
-  // let history = useHistory();
   const classes = useStyles();
   const formik = useFormik({
     initialValues: {
@@ -82,7 +80,6 @@ const ContactForm = () => {
         })
         .then((response) => {
           alert("Your enquiry has been sent to Neil Lemmer");
-          // history.push("/");
         })
         .catch((error) => {
           console.log(error);

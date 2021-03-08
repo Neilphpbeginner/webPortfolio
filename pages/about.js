@@ -18,9 +18,8 @@ export default function About() {
         <meta name="description" content="Neil Lemmer || About Page" />
         <meta
           name="keywords"
-          content="Neil Lemmer, Web Developer, Software Developer, Java Developer"
+          content="Neil Lemmer, Web Developer, Software Developer, Java Developer, About Page"
         />
-        <meta name="keywords" content="Neil Lemmer, About Page" />
       </Helmet>
       <div>
         <NavBar />

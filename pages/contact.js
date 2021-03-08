@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import { Helmet } from "react-helmet";
 import { makeStyles } from "@material-ui/styles";
-import ContactForm from "./ContactForm";
+import ContactForm from "./components/ContactForm";
 
 const useStyles = makeStyles({
   contactForm: {
@@ -18,8 +18,7 @@ export default function ContactPage() {
     <div>
       <Helmet>
         <title> Neil Lemmer || Contact Me</title>
-        <meta name="description" content="NNeil Lemmer || About Page" />
-        <meta name="keywords" content="Neil Lemmer, Contact Page" />
+        <meta name="description" content="Neil Lemmer || Contact Page" />
       </Helmet>
       <NavBar />
       <section className={classes.contactForm}>
