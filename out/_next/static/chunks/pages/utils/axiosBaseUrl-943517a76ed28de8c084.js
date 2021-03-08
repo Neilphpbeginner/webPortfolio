@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[18],{b1Mc:function(_,n,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/utils/axiosBaseUrl",function(){return w("WWRU")}])}},[["b1Mc",0,5]]]);
