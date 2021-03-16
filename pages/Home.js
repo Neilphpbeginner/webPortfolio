@@ -9,11 +9,12 @@ const useStyles = makeStyles({
     marginTop: "11.7rem",
   },
   cardContect: {
-    backgroundColor: "556cd6",
+    backgroundColor: theme.palette.primary.main,
     width: "90%",
     margin: "auto",
     minHeight: "100vh",
     borderRadius: "2.5rem",
+    color: theme.palette.background.default,
     "@media (max-width: 500px)": {
       marginTop: "10rem",
     },

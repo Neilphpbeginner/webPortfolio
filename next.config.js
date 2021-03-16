@@ -11,5 +11,4 @@ module.exports = {
       "/projects": { page: "/projects" },
     };
   },
-  assetPrefix: ".",
 };
