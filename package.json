@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap --config soe-config.js",
     "start": "next start",
     "live": "next export"
   },

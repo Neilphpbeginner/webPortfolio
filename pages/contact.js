@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "../src/components/NavBar";
 import { Helmet } from "react-helmet";
 import { makeStyles } from "@material-ui/styles";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "../src/components/ContactForm";
 
 const useStyles = makeStyles({
   contactForm: {

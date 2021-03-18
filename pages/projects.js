@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "../src/components/NavBar";
 import { Helmet } from "react-helmet";
 
 export default function Projects() {
