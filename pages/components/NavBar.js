@@ -43,12 +43,6 @@ export default function NavBar() {
   const classes = useStyles();
   return (
     <div>
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
-        />
-      </Head>
       <AppBar position="fixed" color="primary">
         <Toolbar className={classes.menuAppBar}>
           <Typography variant="h6" className={classes.mainHeading}>

@@ -20,6 +20,10 @@ export default function About() {
           name="keywords"
           content="Neil Lemmer, Web Developer, Software Developer, Java Developer, About Page"
         />
+        <meta
+          name="google-site-verification"
+          content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
+        />
       </Helmet>
       <div>
         <NavBar />

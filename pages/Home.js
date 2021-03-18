@@ -35,6 +35,10 @@ export default function Home() {
           content="Reactjs, Redux, Javascript, Python, Java, Nodejs, Express, HTML, CSS, PHP, Windows Suite, Linux knexjs, Mysql, Postgress, Passportjs, Backend developer, Frontend Developer.  "
         />
         <meta name="robots" content="index, follow" />
+        <meta
+          name="google-site-verification"
+          content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
+        />
       </Head>
       <NavBar />
 

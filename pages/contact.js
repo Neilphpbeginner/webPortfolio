@@ -19,6 +19,10 @@ export default function ContactPage() {
       <Helmet>
         <title> Neil Lemmer || Contact Me</title>
         <meta name="description" content="Neil Lemmer || Contact Page" />
+        <meta
+          name="google-site-verification"
+          content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
+        />
       </Helmet>
       <NavBar />
       <section className={classes.contactForm}>
