@@ -39,6 +39,15 @@ export default function Home() {
           name="google-site-verification"
           content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MVRJH7FSJ9"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-MVRJH7FSJ9');
+        </script>
       </Head>
       <NavBar />
 
