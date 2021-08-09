@@ -41,12 +41,12 @@ export default function Home() {
         />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-MVRJH7FSJ9"
+          src="https://www.googletagmanager.com/gtag/js?id=G-L2VS7L8PKX"
         ></script>
         <script>
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-MVRJH7FSJ9');
+          gtag('js', new Date()); gtag('config', 'G-L2VS7L8PKX');
         </script>
       </Head>
       <NavBar />
