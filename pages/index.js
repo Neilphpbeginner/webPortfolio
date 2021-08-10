@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../src/components/NavBar";
 import theme from "../src/MaterialUI Theme/theme";
 import Head from "next/head";
+import Script from "next/script";
 import { Card, makeStyles, CardContent, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -39,15 +40,10 @@ export default function Home() {
           name="google-site-verification"
           content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
         />
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-L2VS7L8PKX"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-L2VS7L8PKX');
-        </script>
+        ></Script>
       </Head>
       <NavBar />
 

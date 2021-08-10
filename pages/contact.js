@@ -23,7 +23,7 @@ export default function ContactPage() {
           name="google-site-verification"
           content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
         />
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-L2VS7L8PKX"
         ></script>
@@ -31,7 +31,7 @@ export default function ContactPage() {
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-L2VS7L8PKX');
-        </script>
+        </script> */}
       </Helmet>
       <NavBar />
       <section className={classes.contactForm}>

@@ -45,7 +45,7 @@ export default function NavBar() {
       <AppBar position="fixed" color="primary">
         <Toolbar className={classes.menuAppBar}>
           <Typography variant="h6" className={classes.mainHeading}>
-            Neil Lemmer's Web Portfolio
+            Neil Lemmer Web Portfolio
           </Typography>
           <section className={classes.menuItems}>
             <Typography variant="h6" color="textPrimary">

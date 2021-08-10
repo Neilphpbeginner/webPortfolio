@@ -24,9 +24,6 @@
     "start": "next start",
     "live": "next export"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,6 +37,8 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.0.1",
     "next-sitemap": "^1.6.124"
   }
 }
