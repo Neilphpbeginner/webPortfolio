@@ -1,14 +1,23 @@
 # *
 User-agent: *
 Allow: /
+Allow: /contact
+Allow: /about
+Allow: /projects
 
 # Googlebot desktop
 User-agent: Googlebot desktop
 Allow: /
+Allow: /contact
+Allow: /about
+Allow: /projects
 
 # Googlebot smartphone
 User-agent: Googlebot smartphone
 Allow: /
+Allow: /contact
+Allow: /about
+Allow: /projects
 
 # Host
 Host: http://www.nlemmercv.co.za

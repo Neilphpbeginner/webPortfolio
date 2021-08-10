@@ -49,22 +49,22 @@ export default function NavBar() {
           </Typography>
           <section className={classes.menuItems}>
             <Typography variant="h6" color="textPrimary">
-              <Link href="/" as="/" prefetch={true}>
+              <Link href="/" as="/">
                 <a>Home</a>
               </Link>
             </Typography>
             <Typography variant="h6" color="textPrimary">
-              <Link href="/about" as="/about" prefetch={true}>
+              <Link href="/about" as="/about">
                 <a>About</a>
               </Link>
             </Typography>
             <Typography variant="h6" color="textPrimary">
-              <Link href="/projects" as="/projects" prefetch={true}>
+              <Link href="/projects" as="/projects">
                 <a>Projects</a>
               </Link>
             </Typography>
             <Typography variant="h6" color="textPrimary">
-              <Link href="/contact" as="/contact" prefetch={true}>
+              <Link href="/contact" as="/contact">
                 <a>Contact</a>
               </Link>
             </Typography>
