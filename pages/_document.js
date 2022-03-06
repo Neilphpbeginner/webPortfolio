@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-import { GA_TRACKING_ID } from "../src/lib/gtag";
+import { GA_TRACKING_ID } from "../lib/gtag";
 
 export default class MyDocument extends Document {
   render() {
@@ -23,6 +23,11 @@ export default class MyDocument extends Document {
             });
           `,
             }}
+          />
+          <meta name="robots" content="index, follow" />
+          <meta
+            name="google-site-verification"
+            content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
           />
         </Head>
         <body>
