@@ -73,12 +73,13 @@ const ContactForm = () => {
     }),
     onSubmit: (values) => {
       axiosBaseUrl
-        .post("/sendEmail", {
+        .post("/email/sendEmail", {
           enquiryEmailAdress: values.contactPersonEmail,
-          enquiryEnailSubject: values.contactPersonSubject,
+          enquiryEmailSubject: values.contactPersonSubject,
           enquiryEmailContent: values.contactPersonEnquiry,
         })
         .then((response) => {
+          console.log(response);
           alert("Your enquiry has been sent to Neil Lemmer");
         })
         .catch((error) => {
