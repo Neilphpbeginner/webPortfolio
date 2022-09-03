@@ -2,7 +2,6 @@ import React from "react";
 import NavBar from "../src/components/NavBar";
 import theme from "../src/MaterialUI Theme/theme";
 import Head from "next/head";
-import Script from "next/script";
 import { Card, makeStyles, CardContent, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
