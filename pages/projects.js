@@ -1,28 +1,40 @@
 import React from "react";
 import NavBar from "../src/components/NavBar";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import RepoCard from "../src/components/RepoCard";
+import axios from "axios";
 
 export default function Projects() {
+  const [gitHubRepositories, setgitHubRepositories] = useState([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/users/Neilphpbeginner/repos`
+      );
+      setgitHubRepositories(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []),
+    console.log(gitHubRepositories);
+
   return (
     <div>
       <Helmet>
         <title> Neil Lemmer || Projects</title>
         <meta name="description" content="Neil Lemmer Project's Page" />
-        <meta
-          name="google-site-verification"
-          content="2RtZ7IsH_mEiSx0kHDspedV61VUK-kv6s-9EcUg7eU4"
-        />
-        {/* <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-L2VS7L8PKX"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-L2VS7L8PKX');
-        </script> */}
       </Helmet>
       <NavBar />
+
+      {gitHubRepositories.map((data, i, language) => (
+        <RepoCard repo={data} key={i} language={language} />
+      ))}
     </div>
   );
 }
