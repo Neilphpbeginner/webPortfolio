@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)",
     },
   },
-  tittle: {
+  title: {
     "&:active": {
       color: "#00008E",
     },

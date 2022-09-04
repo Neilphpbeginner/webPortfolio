@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import Link from "next/link";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   menuAppBar: {
     display: "flex",
     flexDirection: "row",
@@ -31,12 +31,12 @@ const useStyles = makeStyles({
       textAlign: "center",
     },
     "& a": {
-      color: "#FFFFFF",
+      color: theme.palette.secondary.main,
       fontSize: "2.3rem",
       textDecoration: "none",
     },
   },
-});
+}));
 
 export default function NavBar() {
   const classes = useStyles();

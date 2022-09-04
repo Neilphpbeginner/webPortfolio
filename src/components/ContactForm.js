@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     minWidth: "85%",
     minHeight: "100vh",
     "@media (max-width: 500px)": {
-      marginTop: "1rem",
+      marginTop: "7rem",
     },
     "& span": {
       fontSize: "3.4rem",
@@ -46,6 +46,13 @@ const useStyles = makeStyles((theme) => ({
     "& label": {
       fontSize: "2.4rem",
     },
+  },
+  buttonColor: {
+    test: () => {
+      console.log(theme.palette.primary.main);
+    },
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
   },
 }));
 
@@ -143,7 +150,7 @@ const ContactForm = () => {
             formik.errors.contactPersonEnquiry}
         </FormHelperText>
       </FormControl>
-      <Button variant="text" type="submit">
+      <Button variant="text" type="submit" className={classes.buttonColor}>
         Submit
       </Button>
     </form>

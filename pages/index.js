@@ -4,7 +4,7 @@ import theme from "../src/MaterialUI Theme/theme";
 import Head from "next/head";
 import { Card, makeStyles, CardContent, Typography } from "@material-ui/core";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: "11.7rem",
   },
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
       marginTop: "10rem",
     },
   },
-});
+}));
 export default function Home() {
   const classes = useStyles();
   return (
